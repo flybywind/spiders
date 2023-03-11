@@ -1,0 +1,3 @@
+chinese_poems/src/__pycache__/**
+chinese_poems/tests/__pycache__/**
+chinese_poems/*.json
