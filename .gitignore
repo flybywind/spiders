@@ -5,3 +5,4 @@ chinese_poems/*.json
 *.sqbpro
 chinese_poems/sqlite/**
 .gitignore
+chinese_poems/test_db/**
