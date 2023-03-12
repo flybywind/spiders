@@ -1,8 +1,10 @@
+import logging
+import os
 from os import path
 import sqlite3
 from itemadapter import ItemAdapter
 
-from .conf import SPIDER_NAME
+from conf import SPIDER_NAME
 
 
 class SqlitePipeline:
@@ -10,24 +12,30 @@ class SqlitePipeline:
     table_name = SPIDER_NAME
 
     def __init__(self, parent_dir="."):
+        if not path.exists(parent_dir):
+            os.mkdir(parent_dir)
         self.db_conn = sqlite3.connect(
             path.join(parent_dir, f"{SqlitePipeline.collection_name}.db"))
         self.cursor = self.db_conn.cursor()
 
     @classmethod
     def from_crawler(cls, crawler):
-        print("create SqlitePipeline", crawler.settings.get('ITEM_PIPELINES'))
+        logging.info(
+            f"settings of crawler: {crawler.settings}")
+        return SqlitePipeline(crawler.settings.get("DB_PATH", "."))
 
     def open_spider(self, spider):
         self.cursor.executescript(f'''
         BEGIN;
         CREATE TABLE if not exists {SqlitePipeline.table_name}(
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                url TEXT NOT NULL,
                 author TEXT NOT NULL,
                 title TEXT NOT NULL,
                 poem TEXT NOT NULL,
                 yiwen TEXT NOT NULL,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+        CREATE INDEX if not exists url_index ON {SqlitePipeline.table_name} (url);
         CREATE INDEX if not exists title_index ON {SqlitePipeline.table_name} (title);
         CREATE INDEX if not exists author_index ON {SqlitePipeline.table_name} (author);
         COMMIT;
@@ -38,9 +46,9 @@ class SqlitePipeline:
 
     def process_item(self, item, spider):
         with self.db_conn:
-            self.db_conn.execute(f'''INSERT OR IGNORE into {SqlitePipeline.table_name}(author, title, poem, yiwen) 
-                                        SELECT ?, ?, ?, ? WHERE NOT EXISTS 
-                                            (SELECT * FROM {SqlitePipeline.table_name} WHERE author = ? and title = ?); ''',
-                                 (item.get("author"), item.get("title"), "\n".join(item.get("poem")), "\n".join(item.get("yiwen")),
-                                  item.get("author"), item.get("title")))
+            self.db_conn.execute(f'''INSERT OR IGNORE into {SqlitePipeline.table_name}(author, url, title, poem, yiwen) 
+                                        SELECT ?, ?, ?, ?, ? WHERE NOT EXISTS 
+                                            (SELECT * FROM {SqlitePipeline.table_name} WHERE author = ? and title = ? and url = ?); ''',
+                                 (item.get("author"), item.get("url"), item.get("title"), "\n".join(item.get("poem")), "\n".join(item.get("yiwen")),
+                                  item.get("author"), item.get("title"), item.get("url")))
         return item

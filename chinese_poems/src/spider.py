@@ -1,6 +1,17 @@
+import logging
+import sqlite3
 import scrapy
-from .conf import *
-from .sqlite_pipeline import SqlitePipeline
+import pathlib
+
+cur_dir = pathlib.Path(__file__).absolute().parent.parent
+
+try:
+    from conf import *
+    from sqlite_pipeline import SqlitePipeline
+    from sqlite_dao import SqliteDB
+    from utils import get_url_from_href
+except:
+    raise RuntimeError("can't load internal packages")
 
 
 class GushiwenSpider(scrapy.Spider):
@@ -9,14 +20,21 @@ class GushiwenSpider(scrapy.Spider):
         'https://so.gushiwen.cn/gushi/sanbai.aspx',
     ]
     custom_settings = {
+        'DB_PATH': cur_dir.joinpath("sqlite").as_posix(),
         'ITEM_PIPELINES': {
             SqlitePipeline: 900
         }
     }
 
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.db_dao = SqliteDB(
+            GushiwenSpider.custom_settings.get("DB_PATH", "."))
+
     def parse(self, response, **kwargs):
         op = kwargs.get('op', "next")
         if op == "end":
+
             title = response.selector.css(".cont h1::text").get()
             poem = response.selector.css(".cont .contson")[0]
             poem = poem.css("::text").getall()
@@ -30,14 +48,25 @@ class GushiwenSpider(scrapy.Spider):
             if len(poem_lines) > 0 and len(author) > 0:
                 yield {
                     'title': title,
+                    'url': response.url,
                     'author': "".join(author),
                     'poem': poem_lines,
                     'yiwen': yiwen_lines
                 }
         elif op == "next":
             for next_page in response.selector.css(".left .typecont a::attr('href')"):
+                next_url = get_url_from_href(
+                    response.url, next_page.get())
+                if self.db_dao.has_crawled(next_url):
+                    logging.info(f"skip url: {next_url}")
+                    return
                 yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'end'})
             for next_page in response.selector.css(".right .cont a::attr('href')"):
+                next_url = get_url_from_href(
+                    response.url, next_page.get())
+                if self.db_dao.has_crawled(next_url):
+                    logging.info(f"skip url: {next_url}")
+                    return
                 yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'next'})
 
     def _clear_text(self, ll, thr=0):
