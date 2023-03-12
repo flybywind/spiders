@@ -1,5 +1,6 @@
 import logging
-import sqlite3
+import os
+from os import path
 import scrapy
 import pathlib
 
@@ -9,7 +10,7 @@ try:
     from conf import *
     from sqlite_pipeline import SqlitePipeline
     from sqlite_dao import SqliteDB
-    from utils import get_url_from_href
+    from utils import get_url_from_href, init_db_dir
 except:
     raise RuntimeError("can't load internal packages")
 
@@ -28,8 +29,9 @@ class GushiwenSpider(scrapy.Spider):
 
     def __init__(self, name=None, **kwargs):
         super().__init__(name, **kwargs)
-        self.db_dao = SqliteDB(
-            GushiwenSpider.custom_settings.get("DB_PATH", "."))
+        db_path = GushiwenSpider.custom_settings.get("DB_PATH", ".")
+        init_db_dir(db_path)
+        self.db_dao = SqliteDB(db_path)
 
     def parse(self, response, **kwargs):
         op = kwargs.get('op', "next")
@@ -59,15 +61,15 @@ class GushiwenSpider(scrapy.Spider):
                     response.url, next_page.get())
                 if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):
                     logging.info(f"skip url: {next_url}")
-                    return
-                yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'end'})
+                else:
+                    yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'end'})
             for next_page in response.selector.css(".right .cont a::attr('href')"):
                 next_url = get_url_from_href(
                     response.url, next_page.get())
                 if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):
                     logging.info(f"skip url: {next_url}")
-                    return
-                yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'next'})
+                else:
+                    yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'next'})
 
     def _clear_text(self, ll, thr=0):
         ll = [l.strip() for l in ll]
