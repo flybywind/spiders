@@ -1,6 +1,4 @@
 import logging
-import os
-from os import path
 import scrapy
 import pathlib
 
@@ -45,7 +43,7 @@ class GushiwenSpider(scrapy.Spider):
                 ".cont p.source a::text")[:2].getall()
 
             yiwen = response.selector.css(".contyishang")[0]
-            yiwen = yiwen.css("p::text").getall()[1:]
+            yiwen = yiwen.css("p::text").getall()
             yiwen_lines = self._clear_text(yiwen, YIWEN_THR)
             if len(poem_lines) > 0 and len(author) > 0:
                 yield {
