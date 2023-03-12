@@ -3,5 +3,5 @@ chinese_poems/tests/__pycache__/**
 chinese_poems/*.json
 **/*.log
 *.sqbpro
-sqlite/**
+chinese_poems/sqlite/**
 .gitignore
