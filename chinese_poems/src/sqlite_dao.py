@@ -1,6 +1,6 @@
 import sqlite3
 from os import path
-
+from typing import List
 from conf import SPIDER_NAME
 
 from typing import NamedTuple
@@ -39,7 +39,7 @@ class SqliteDB():
                                  ).fetchall()
         return len(r) > 0
 
-    def scan_db(self, cond_sql):
+    def scan_db(self, cond_sql) -> List[Row]:
         fields = Row.fields()
         select_sql = f"""SELECT {",".join(fields)} from {SqliteDB.table_name} where {cond_sql}"""
         result = self.db_conn.execute(select_sql)
