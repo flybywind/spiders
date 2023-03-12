@@ -57,14 +57,14 @@ class GushiwenSpider(scrapy.Spider):
             for next_page in response.selector.css(".left .typecont a::attr('href')"):
                 next_url = get_url_from_href(
                     response.url, next_page.get())
-                if self.db_dao.has_crawled(next_url):
+                if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):
                     logging.info(f"skip url: {next_url}")
                     return
                 yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'end'})
             for next_page in response.selector.css(".right .cont a::attr('href')"):
                 next_url = get_url_from_href(
                     response.url, next_page.get())
-                if self.db_dao.has_crawled(next_url):
+                if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):
                     logging.info(f"skip url: {next_url}")
                     return
                 yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'next'})

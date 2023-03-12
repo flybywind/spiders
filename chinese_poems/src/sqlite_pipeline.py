@@ -29,7 +29,7 @@ class SqlitePipeline:
         BEGIN;
         CREATE TABLE if not exists {SqlitePipeline.table_name}(
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                url TEXT NOT NULL,
+                url TEXT NOT NULL UNIQUE,
                 author TEXT NOT NULL,
                 title TEXT NOT NULL,
                 poem TEXT NOT NULL,
@@ -46,9 +46,7 @@ class SqlitePipeline:
 
     def process_item(self, item, spider):
         with self.db_conn:
-            self.db_conn.execute(f'''INSERT OR IGNORE into {SqlitePipeline.table_name}(author, url, title, poem, yiwen) 
-                                        SELECT ?, ?, ?, ?, ? WHERE NOT EXISTS 
-                                            (SELECT * FROM {SqlitePipeline.table_name} WHERE author = ? and title = ? and url = ?); ''',
-                                 (item.get("author"), item.get("url"), item.get("title"), "\n".join(item.get("poem")), "\n".join(item.get("yiwen")),
-                                  item.get("author"), item.get("title"), item.get("url")))
+            self.db_conn.execute(f'''INSERT OR REPLACE into {SqlitePipeline.table_name}(author, url, title, poem, yiwen, created_at) 
+                                        VALUES(?, ?, ?, ?, ?, CURRENT_TIMESTAMP)''',
+                                 (item.get("author"), item.get("url"), item.get("title"), "\n".join(item.get("poem")), "\n".join(item.get("yiwen")),))
         return item
