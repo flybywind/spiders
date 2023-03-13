@@ -34,7 +34,7 @@ def create_fine_tune_samples(db_path, output_jsonl, offset=0, size=100):
     {sample_one(yiwen_compl)}：
     {r.yiwen}\n"""
             }
-            jsonl.write(json.dumps(prompt))
+            jsonl.write(json.dumps(prompt, ensure_ascii=False))
             jsonl.write("\n")
             # template 2
             lidx = sample_one(poem_idx)
@@ -47,7 +47,7 @@ def create_fine_tune_samples(db_path, output_jsonl, offset=0, size=100):
     {sample_one(yiwen_compl)}：
     {r.yiwen}\n"""
             }
-            jsonl.write(json.dumps(prompt))
+            jsonl.write(json.dumps(prompt, ensure_ascii=False))
             jsonl.write("\n")
             # template 3
             # todo: query davinci-3 to get the keywords of the poem

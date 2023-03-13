@@ -33,35 +33,42 @@ class GushiwenSpider(scrapy.Spider):
 
     def parse(self, response, **kwargs):
         op = kwargs.get('op', "next")
+        css = response.selector.css
         if op == "end":
-
-            title = response.selector.css(".cont h1::text").get()
-            poem = response.selector.css(".cont .contson")[0]
+            title = css(".cont h1::text").get()
+            poem = css(".cont .contson")[0]
             poem = poem.css("::text").getall()
             poem_lines = self._clear_text(poem, POEM_THR)
-            author = response.selector.css(
+            author = css(
                 ".cont p.source a::text")[:2].getall()
 
-            yiwen = response.selector.css(".contyishang")[0]
+            yiwen = css(".contyishang")[0]
             yiwen = yiwen.css("p::text").getall()
             yiwen_lines = self._clear_text(yiwen, YIWEN_THR)
+            shangxi = None
+            try:
+                shangxi = css(".contyishang")[1]
+                shangxi = shangxi.css("p::text").get().strip()
+            except:
+                print("WARN: doesn't find shangxi text")
             if len(poem_lines) > 0 and len(author) > 0:
                 yield {
                     'title': title,
                     'url': response.url,
                     'author': "".join(author),
                     'poem': poem_lines,
-                    'yiwen': yiwen_lines
+                    'yiwen': yiwen_lines,
+                    'shangxi': shangxi,
                 }
         elif op == "next":
-            for next_page in response.selector.css(".left .typecont a::attr('href')"):
+            for next_page in css(".left .typecont a::attr('href')"):
                 next_url = get_url_from_href(
                     response.url, next_page.get())
                 if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):
                     logging.info(f"skip url: {next_url}")
                 else:
                     yield response.follow(next_page.get(), self.parse, cb_kwargs={'op': 'end'})
-            for next_page in response.selector.css(".right .cont a::attr('href')"):
+            for next_page in css(".right .cont a::attr('href')"):
                 next_url = get_url_from_href(
                     response.url, next_page.get())
                 if self.db_dao.has_crawled(next_url, CRAWLER_REFRESH_DAYS):

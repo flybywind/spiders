@@ -29,6 +29,7 @@ class SqlitePipeline:
                 title TEXT NOT NULL,
                 poem TEXT NOT NULL,
                 yiwen TEXT NOT NULL,
+                shangxi TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
         CREATE INDEX if not exists url_index ON {SqlitePipeline.table_name} (url);
         CREATE INDEX if not exists title_index ON {SqlitePipeline.table_name} (title);
@@ -41,7 +42,10 @@ class SqlitePipeline:
 
     def process_item(self, item, spider):
         with self.db_conn:
-            self.db_conn.execute(f'''INSERT OR REPLACE into {SqlitePipeline.table_name}(author, url, title, poem, yiwen, created_at) 
-                                        VALUES(?, ?, ?, ?, ?, CURRENT_TIMESTAMP)''',
-                                 (item.get("author"), item.get("url"), item.get("title"), "\n".join(item.get("poem")), "\n".join(item.get("yiwen")),))
+            self.db_conn.execute(f'''INSERT OR REPLACE into {SqlitePipeline.table_name}(author, url, title, poem, yiwen, shangxi, created_at) 
+                                        VALUES(?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)''',
+                                 (item.get("author"), item.get("url"), item.get("title"),
+                                  "\n".join(item.get("poem")),
+                                  "\n".join(item.get("yiwen")),
+                                  item.get("shangxi"),))
         return item
