@@ -12,6 +12,7 @@ class Row(NamedTuple):
     title: str
     poem: str
     yiwen: str
+    shangxi: str
 
     @staticmethod
     def fields():

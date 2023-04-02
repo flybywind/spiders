@@ -6,4 +6,6 @@ chinese_poems/*.json
 chinese_poems/sqlite/**
 .gitignore
 chinese_poems/test_db/**
-chinese_poems/chinese_poem_prompt.jsonl
+chinese_poems/*.jsonl
+chinese_poems/*.json
+chinese_poems/*.txt
