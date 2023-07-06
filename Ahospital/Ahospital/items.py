@@ -7,6 +7,15 @@ import scrapy
 
 
 class AhospitalItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    def __init__(self, url, title, paragraph):
+        self.fields['url'] = url 
+        self.fields['title'] = title
+        self.fields['paragragh'] = paragraph
+
+    def __getattr__(self, name):
+        if name in self.fields:
+            return self.fields[name]
+        else:
+            return super().__getattr__(name)
+
+    
