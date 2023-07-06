@@ -9,3 +9,9 @@ chinese_poems/test_db/**
 chinese_poems/*.jsonl
 chinese_poems/*.json
 chinese_poems/*.txt
+Ahospital/.spider.log.swp
+Ahospital/**/__pycache__/**
+.vscode/settings.json
+Ahospital/medicine
+Ahospital/test/sqlite/**
+Ahospital/sqlite/** 
