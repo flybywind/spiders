@@ -7,6 +7,7 @@ from urllib.parse import urlparse,unquote
 from ..settings import EXPIRE_DAYS
 from ..items import AhospitalItem
 
+END_ID = set(['fromlink', 'footer'])
 class HospitalSpider(scrapy.Spider):
     name = "HospitalSpider"
     start_urls = [
@@ -17,31 +18,45 @@ class HospitalSpider(scrapy.Spider):
     table_name = name.lower()
 
     def url_fetched(self, next_url) -> bool:
-        return len(self.db_conn.execute(f"""select 1 from {self.table_name} where url = ? and
+        return False if self.db_conn is None else \
+              len(self.db_conn.execute(f"""select 1 from {self.table_name} where url = ? and
                                       created_at > datetime('now', '-{EXPIRE_DAYS} days')""", (next_url,)).fetchall()) > 1
 
     def parse(self, response):
         title = response.css("title::text").get().split()[0]
-        paragraphs = response.css("div#bodyContent p,tr,li")
+        paragraphs = response.css("div#bodyContent p,tr,li,div#fromlink,div#footer")
         next_pages = []
         page = []
         recently_updated = self.url_fetched(response.url)
         for r in paragraphs:
+            if r.root.attrib.get('id', "") in END_ID:
+                break
             if not recently_updated:
-                if r.root.tag in {'tr', 'li'}:
-                    if r.css("::text").getall() != r.css("a::text").getall():
-                        page.append("".join([t.strip() for t in r.css("::text").getall()]))
-                if r.root.tag == 'p':
-                    page.append("".join(r.css("::text").getall()))
-            
+                parent_text = [e for t in r.css("::text").getall() if len(e:=t.strip()) > 1]
+                children_text = {e for t in r.css("a::text, a>*::text").getall() if len(e:=t.strip()) > 1}
+                remain_text = "".join([e for e in parent_text if e not in children_text])
+                if r.root.tag == 'tr':
+                    parent_text = "\t".join(parent_text)
+                else:
+                    parent_text = "".join(e for e in r.css("::text").getall())
+                if len(parent_text) > 0 \
+                    and len(remain_text) / len(parent_text) > 0.2:
+                    page.append(parent_text)
+              
             next_pages += r.css("a::attr(href)").getall()
         
         # if the page was recently updated, dont update it again
         # but still we need to iterate over all of them to explore
         # the whole network
-        if not recently_updated and len(page) > 0:
+        average_sentence_len = sum(len(a) for a in page)/len(page)
+        if not recently_updated and len(page) > 10 and average_sentence_len > 20:
             yield AhospitalItem(url=response.url,
                 title = title, paragragh='\n'.join(page))
+        else:
+            if recently_updated:
+                self.logger.info(f"skip page recently crawled {response.url}")
+            else:
+                self.logger.info(f"skip page since the content is too short: {response.url}")
         
         if len(next_pages) > 0:
             for n in next_pages:
@@ -54,5 +69,7 @@ class HospitalSpider(scrapy.Spider):
                      path_last != '用户') :
                     self.logger.info(f"forward to next url: {next_url}")
                     yield scrapy.Request(next_url)
-                    return
-                self.logger.info(f"skip url: {next_url}, domain: {domain}, path: {up.path}")
+                else:
+                    self.logger.info(f"skip url: {next_url}, domain: {domain}, path: {up.path}")
+        else:
+            self.logger.info(f"no forward urls found in {response.url}")
