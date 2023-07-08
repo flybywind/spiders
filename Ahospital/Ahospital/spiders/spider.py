@@ -25,6 +25,12 @@ class HospitalSpider(scrapy.Spider):
     def parse(self, response):
         title = response.css("title::text").get().split()[0]
         paragraphs = response.css("div#bodyContent p,tr,li,div#fromlink,div#footer")
+        nav_text = response.css(".nav ::text").getall()
+        for nav in nav_text[1:]:
+            if nav.find('制药企业列表') >= 0:
+                self.logger.warning("skip company info page")
+                return
+
         next_pages = []
         page = []
         recently_updated = self.url_fetched(response.url)
@@ -48,15 +54,18 @@ class HospitalSpider(scrapy.Spider):
         # if the page was recently updated, dont update it again
         # but still we need to iterate over all of them to explore
         # the whole network
-        average_sentence_len = sum(len(a) for a in page)/len(page)
-        if not recently_updated and len(page) > 10 and average_sentence_len > 20:
-            yield AhospitalItem(url=response.url,
-                title = title, paragragh='\n'.join(page))
+        if not recently_updated and len(page) > 4:
+            average_sentence_len = sum(len(a) for a in page)/len(page)
+            if  average_sentence_len > 20:
+                yield AhospitalItem(url=response.url,
+                    title = title, paragragh='\n'.join(page))
+            else:
+                self.logger.warning(f"skip page since the average setence length are too few: {response.url}")
         else:
             if recently_updated:
-                self.logger.info(f"skip page recently crawled {response.url}")
+                self.logger.warning(f"skip page recently crawled {response.url}")
             else:
-                self.logger.info(f"skip page since the content is too short: {response.url}")
+                self.logger.warning(f"skip page since the paragraghs are too few: {response.url}")
         
         if len(next_pages) > 0:
             for n in next_pages:
@@ -70,6 +79,6 @@ class HospitalSpider(scrapy.Spider):
                     self.logger.info(f"forward to next url: {next_url}")
                     yield scrapy.Request(next_url)
                 else:
-                    self.logger.info(f"skip url: {next_url}, domain: {domain}, path: {up.path}")
+                    self.logger.warning(f"skip url: {next_url}, domain: {domain}, path: {up.path}")
         else:
             self.logger.info(f"no forward urls found in {response.url}")
