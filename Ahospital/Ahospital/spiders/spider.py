@@ -20,7 +20,7 @@ class HospitalSpider(scrapy.Spider):
     def url_fetched(self, next_url) -> bool:
         return False if self.db_conn is None else \
               len(self.db_conn.execute(f"""select 1 from {self.table_name} where url = ? and
-                                      created_at > datetime('now', '-{EXPIRE_DAYS} days')""", (next_url,)).fetchall()) > 1
+                    created_at > datetime('now', '-{EXPIRE_DAYS} days')""", (next_url,)).fetchall()) > 0
 
     def parse(self, response):
         title = response.css("title::text").get().split()[0]
@@ -29,6 +29,9 @@ class HospitalSpider(scrapy.Spider):
         for nav in nav_text[1:]:
             if nav.find('制药企业列表') >= 0:
                 self.logger.warning("skip company info page")
+                return
+            if nav.find('医院列表') >= 0:
+                self.logger.warning("skip hospital info page")
                 return
 
         next_pages = []

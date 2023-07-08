@@ -2431,3 +2431,1006 @@ pageTracker._trackPageview();
         assert False
     except StopIteration:
         print("pass")
+
+def test_spider_hospital_info_page():
+    body = """
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="zh-hans" dir="ltr">
+<head>
+<title>青岛大学医学院附属医院 - A+医学百科</title>
+<meta name="keywords" content="青岛大学医学院附属医院,青岛大学医学院附属医院地址,青岛大学医学院附属医院电话,青岛大学医学院附属医院简介,医院" />
+<meta name="description" content="青岛大学医学院附属医院相关信息介绍，包含青岛大学医学院附属医院的联系电话，地址等信息。青岛大学医学院附属医院位于山东省青岛市江苏路16号，联系电话是0532-82911847，青岛大学医学院附属..." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="MediaWiki 1.16.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="apple-touch-icon" href="http://s.ayxbk.com/common/images/apple-touch-icon.png" />
+<link rel="shortcut icon" href="http://s.ayxbk.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="A+医学百科 (zh-hans)" />
+<link rel="copyright" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%89%88%E6%9D%83" />
+<link rel="stylesheet" href="http://s.ayxbk.com/vector/main-mini.css?278" media="screen" />
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-青岛大学医学院附属医院 skin-vector">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		     (adsbygoogle = window.adsbygoogle || []).push({
+		          google_ad_client: "ca-pub-4174070858627065",
+		          enable_page_level_ads: true
+		     });
+		</script>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" >
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">青岛大学医学院附属医院</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					跳转到： <a href="#mw-head">导航</a>,
+					<a href="#p-search">搜索</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="nav">
+<tr>
+<td><a href="/w/%E9%A6%96%E9%A1%B5" title="首页">A+医学百科</a> &gt;&gt; <a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="全国医院列表">全国医院列表</a> &gt;&gt; <a href="/w/%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="山东省医院列表">山东省医院列表</a> &gt;&gt; <a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="青岛市医院列表">青岛市医院列表</a> &gt;&gt; <a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%B8%82%E5%8D%97%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="青岛市市南区医院列表">青岛市市南区医院列表</a> &gt;&gt; <strong class="selflink">青岛大学医学院附属医院</strong></td>
+</tr>
+</table>
+<p> <b>青岛大学医学院附属医院</b>信息概要：</p>
+<ul>
+<li><b>医院地址</b>：山东省青岛市江苏路16号</li>
+<li><b>联系电话</b>：0532-82911847</li>
+<li><b>医院等级</b>：<a href="/w/%E4%B8%89%E7%BA%A7%E7%94%B2%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="三级甲等医院列表" class="mw-redirect">三级甲等</a></li>
+<li><b>医院类型</b>：<a href="/w/%E7%BB%BC%E5%90%88%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="综合医院列表">综合医院</a></li>
+<li><b>重点科室</b>：<a href="/w/%E4%BB%A5%E6%B3%8C%E5%B0%BF%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以泌尿外科为重点科室的医院列表">泌尿外科</a>、<a href="/w/%E4%BB%A5%E6%99%AE%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以普外科为重点科室的医院列表">普外科</a>、<a href="/w/%E4%BB%A5%E8%82%BF%E7%98%A4%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以肿瘤科为重点科室的医院列表">肿瘤科</a>、<a href="/w/%E4%BB%A5%E6%94%BE%E5%B0%84%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以放射科为重点科室的医院列表">放射科</a>、<a href="/w/%E4%BB%A5%E8%84%8A%E6%9F%B1%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以脊柱外科为重点科室的医院列表">脊柱外科</a>、<a href="/w/%E4%BB%A5%E9%AA%A8%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以骨科为重点科室的医院列表">骨科</a>、口腔内科、<a href="/w/%E4%BB%A5%E5%8F%A3%E8%85%94%E9%A2%8C%E9%9D%A2%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以口腔颌面外科为重点科室的医院列表">口腔颌面外科</a>、<a href="/w/%E4%BB%A5%E7%A5%9E%E7%BB%8F%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以神经外科为重点科室的医院列表">神经外科</a>、脑血管病内科、<a href="/w/%E4%BB%A5%E8%82%9D%E8%83%86%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以肝胆外科为重点科室的医院列表">肝胆外科</a>、低温医学科</li>
+<li><b>经营方式</b>：<a href="/w/%E5%9B%BD%E8%90%A5%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="国营医院列表">国营医院</a></li>
+<li><b>传真号码</b>：</li>
+<li><b>邮政编码</b>：266071</li>
+<li><b>电子邮箱</b>：</li>
+<li><b>医院网站</b>：<a href="http://qdumh.qd.sd.cn" class="external free" rel="nofollow" target="_blank">http://qdumh.qd.sd.cn</a></li>
+</ul>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>目录</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E5.8E.BB.E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E7.9A.84.E4.B9.98.E8.BD.A6.E8.B7.AF.E7.BA.BF"><span class="tocnumber">1</span> <span class="toctext">去青岛大学医学院附属医院的乘车路线</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E5.9C.B0.E5.9B.BE"><span class="tocnumber">2</span> <span class="toctext">青岛大学医学院附属医院地图</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E6.A6.82.E5.86.B5"><span class="tocnumber">3</span> <span class="toctext">青岛大学医学院附属医院概况</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.E6.95.99.E5.AD.A6.E7.A7.91.E7.A0.94"><span class="tocnumber">4</span> <span class="toctext">教学科研</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.E5.8F.91.E5.B1.95.E6.80.9D.E8.B7.AF"><span class="tocnumber">5</span> <span class="toctext">发展思路</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.E5.8C.BB.E9.99.A2.E7.99.BE.E5.B9.B4.E5.8E.86.E5.8F.B2.E6.B2.BF.E9.9D.A9"><span class="tocnumber">6</span> <span class="toctext">医院百年历史沿革</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#1.E3.80.81.281898-1914.E5.B9.B4.29"><span class="tocnumber">6.1</span> <span class="toctext">1、(1898-1914年)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#2.E3.80.81.EF.BC.881915-1937.E5.B9.B46.E6.9C.88.EF.BC.89"><span class="tocnumber">6.2</span> <span class="toctext">2、（1915-1937年6月）</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#3.E3.80.81.EF.BC.881937.E5.B9.B47.E6.9C.88-1945.E5.B9.B48.E6.9C.88.EF.BC.89"><span class="tocnumber">6.3</span> <span class="toctext">3、（1937年7月-1945年8月）</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#4.E3.80.81.EF.BC.881945.E5.B9.B49.E6.9C.88-1949.E5.B9.B45.E6.9C.88.EF.BC.89"><span class="tocnumber">6.4</span> <span class="toctext">4、（1945年9月-1949年5月）</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#5.E3.80.81.EF.BC.881949.E5.B9.B46.E6.9C.88-1998.E5.B9.B46.E6.9C.88.EF.BC.89"><span class="tocnumber">6.5</span> <span class="toctext">5、（1949年6月-1998年6月）</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#.E5.8C.BB.E9.99.A2.E5.9C.B0.E5.9D.80"><span class="tocnumber">7</span> <span class="toctext">医院地址</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E9.99.84.E8.BF.91.E7.9A.84.E5.8C.BB.E9.99.A2"><span class="tocnumber">8</span> <span class="toctext">青岛大学医学院附属医院附近的医院</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.E5.8F.82.E7.9C.8B"><span class="tocnumber">9</span> <span class="toctext">参看</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "显示"; var tocHideText = "隐藏"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="mw-headline" id=".E5.8E.BB.E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E7.9A.84.E4.B9.98.E8.BD.A6.E8.B7.AF.E7.BA.BF">去青岛大学医学院附属医院的乘车路线</span></h2>
+<p>乘1、214、217、220、221、225、228、367路青医附院站下车。</p>
+<h2><span class="mw-headline" id=".E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E5.9C.B0.E5.9B.BE">青岛大学医学院附属医院地图</span></h2>
+<p>青岛大学医学院附属医院地图信息由第三方公司提供。由于技术原因，部分医院位置可能不精确，本地图仅供参考。 本地图显示的位置为山东省青岛市市南区江苏路16号 邮政编码: 266011。</p>
+<div id="map_google3_1" style="width: auto; height: 350px; background-color: #cccccc; overflow: hidden;"></div>
+<h2><span class="mw-headline" id=".E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E6.A6.82.E5.86.B5">青岛大学医学院附属医院概况</span></h2>
+<p><strong class="selflink">青岛大学医学院附属医院</strong>始建于1898年，是山东省东部地区唯一的一所省属综合性教学医院。目前，医院本部占地6万平方米，东区占地7万平方米，总建筑面积达20万平方米，资产总额达20.6亿元，开放总床位1995张，职工2600余人,其中高级专业技术人员550余名，博士240余名，硕士500余名，留学归国人员近百名，国家、省市各级各类专业委员会主委、副主委、<a href="/w/%E5%8D%AB%E7%94%9F%E9%83%A8" title="卫生部" class="mw-redirect">卫生部</a>有突出贡献中青年专家、享受政府特贴专家、山东省“1020”人才工程等专家近200名。医院年门急诊量157万人次，出院5.3万人次，手术2.3万例，是科室齐全、设备先进、技术雄厚、环境优雅、建筑布局合理，集医疗、教学、科研、预防保健和<a href="/w/%E5%BA%B7%E5%A4%8D" title="康复">康复</a>为一体的区域龙头医院，是山东省东部地区医疗、教学、科研和人才培训中心。医院秉承一百多年来的优良传统和严谨作风，全面树立和落实以人为本的科学发展观，以病人为中心，以质量为核心，博学慎思，笃行亲民，以精湛的医疗技术和高尚的医德<a href="/w/%E5%8C%BB%E9%A3%8E" title="医风">医风</a>为患者解除病痛。医院扎实推进完成了“立党为公，行医为民，三百爱心工程”，并设立了扶助弱势患者的“爱心基金”，深入开展了“惠民医疗服务”和下乡帮扶工作，并积极承担了援疆、援藏、援外任务。这些惠民工作的开展赢得了社会各界的强烈反响和广泛赞誉，很好地树立了百年老院的良好形象。<br />
+<br />
+　　医院设有临床科室67个，医技科室27个，研究室(所)16个，现有临床一级学科博士后流动站1个，博士、硕士学位授予点25个，年培养博士、硕士研究生300余名。拥有全国重点学科、省市重点学科和特色专业22个，三分之二以上学科达国内先进水平。拥有造型别致、功能齐全、代表国内先进水平的<a href="/w/%E5%A4%96%E7%A7%91" title="外科">外科</a>病房大楼、<a href="/w/%E5%86%85%E7%A7%91" title="内科">内科</a>病房大楼、<a href="/w/%E9%97%A8%E8%AF%8A" title="门诊">门诊</a>大楼、特需保健病房、国内一流的数字化图书馆和现代化的继续教育与临床技能培训中心，拥有现代化<a href="/w/%E5%B1%82%E6%B5%81" title="层流">层流</a><a href="/w/%E6%89%8B%E6%9C%AF%E5%AE%A4" title="手术室">手术室</a>38间、MM50电子回旋加速器、1.5T<a href="/w/%E6%A0%B8%E7%A3%81%E5%85%B1%E6%8C%AF" title="核磁共振">核磁共振</a>、双探头ECT、64层螺旋<a href="/w/CT" title="CT">CT</a>、<a href="/index.php?title=%E5%B9%B3%E6%9D%BFDSA&amp;action=edit&amp;redlink=1" class="new" title="平板DSA（尚未撰写）" rel="nofollow">平板DSA</a>、DR系统、高能直线加速器、<a href="/w/%E6%BF%80%E5%85%89" title="激光">激光</a><a href="/w/%E5%85%B1%E8%81%9A%E7%84%A6%E6%98%BE%E5%BE%AE%E9%95%9C" title="共聚焦显微镜">共聚焦显微镜</a>、<a href="/w/%E5%9F%BA%E5%9B%A0" title="基因">基因</a>分析仪、各种现代化检验设备等国际一流的高精尖设备，设备总值达7亿元，其中万元以上设备3000台件，为高水平<a href="/w/%E4%B8%B4%E5%BA%8A%E8%AF%8A%E6%96%AD" title="临床诊断">临床诊断</a>和治疗提供了有力保证。以HIS、PACS为主导的的高效的信息系统，构筑了国内领先的数字化医院建设平台，为高效率的医疗服务提供了保障。急危重症抢救、腔镜微创技术、介入诊断和治疗、<a href="/w/%E5%99%A8%E5%AE%98%E7%A7%BB%E6%A4%8D" title="器官移植">器官移植</a>、<a href="/w/%E5%B9%B2%E7%BB%86%E8%83%9E" title="干细胞">干细胞</a>诊断与治疗、医药<a href="/w/%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF" title="生物技术">生物技术</a>诊断与治疗等高新技术的大量开展，很好地实现了医疗技术与世界前沿的接轨，为人民群众提供了良好的医疗服务条件。目前，医院正向着“数字化医院管理，人性化医疗流程，高水平科技创新，低成本高效经营”一流现代化医院的宏伟建设目标大步前进。<br />
+<br />
+　　为探索一条真正符合卫生国情的新路子，近年来，医院作为青岛大学医疗集团的核心医院，根据集团发展的总体思路，提出了有利于提高医院核心竞争力和效益，有利于解决群众的热点和难点问题，有利于与国家宏观卫生政策相衔接，统一质量管理，统一物资配送，统一文化理念，统一服务价格，实现管理联合、资源联合、人员联合、技术联合的“三四四”原则，成功构建了“以城市综合性龙头医院为主体建立面向广大社区和农村，涵盖三级、二级、一级、社区、农村等医院在内的纵向医疗服务网络”，最大限度地发挥了各项医疗卫生资源的效益，最大程度地满足了农村、城市社区等广大人民群众不同层次、日益增长的医疗保健需求。这一符合中国国情的纵向医疗网络的建立和不断完善，在为百姓造福的同时，赢得了卫生同行及卫生部、省卫生厅和各级政府的高度认可与赞誉。这一长效机制的建立，有效缓解了“看病难、看病贵”的问题，为实现 “小病不出村、大病不出县;小病进社区，大病进医院”的卫生改革目标作做出了积极努力。目前，医疗集团正在大学的大力支持下，积极整合各项医学教育、医疗卫生和社会各界资源，走上全面、协调、可持续发展的道路。</p>
+<p><strong class="selflink">青岛大学医学院附属医院</strong>始建于1898年，是山东省东部地区唯一的一所省属综合性教学医院。目前，医院本部占地6万平方米，东区占地7万平方米，总建筑面积达20万平方米，资产总额达20.6亿元，开放总床位1995张，职工2600余人,其中高级专业技术人员550余名，博士240余名，硕士500余名，留学归国人员近百名，国家、省市各级各类专业委员会主委、副主委、<a href="/w/%E5%8D%AB%E7%94%9F%E9%83%A8" title="卫生部" class="mw-redirect">卫生部</a>有突出贡献中青年专家、享受政府特贴专家、山东省“1020”人才工程等专家近200名。医院年门急诊量157万人次，出院5.3</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/w/%E6%96%87%E4%BB%B6:Bkphu.jpg" class="image"><img alt="Bkphu.jpg" src="http://p.ayxbk.com/images/thumb/0/0d/Bkphu.jpg/200px-Bkphu.jpg" width="200" height="133" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/w/%E6%96%87%E4%BB%B6:Bkphu.jpg" class="internal" title="放大"><img src="http://s.ayxbk.com/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+</div>
+</div>
+</div>
+<p>万人次，手术2.3万例，是科室齐全、设备先进、技术雄厚、环境优雅、建筑布局合理，集医疗、教学、科研、预防保健和<a href="/w/%E5%BA%B7%E5%A4%8D" title="康复">康复</a>为一体的区域龙头医院，是山东省东部地区医疗、教学、科研和人才培训中心。医院秉承一百多年来的优良传统和严谨作风，全面树立和落实以人为本的科学发展观，以病人为中心，以质量为核心，博学慎思，笃行亲民，以精湛的医疗技术和高尚的<a href="/w/%E5%8C%BB%E5%BE%B7" title="医德">医德</a><a href="/w/%E5%8C%BB%E9%A3%8E" title="医风">医风</a>为患者解除病痛。医院扎实推进完成了“立党为公，行医为民，三百爱心工程”，并设立了扶助弱势患者的“爱心基金”，深入开展了“惠民医疗服务”和下乡帮扶工作，并积极承担了援疆、援藏、援外任务。这些惠民工作的开展赢得了社会各界的强烈反响和广泛赞誉，很好地树立了百年老院的良好形象。</p>
+<h2><span class="mw-headline" id=".E6.95.99.E5.AD.A6.E7.A7.91.E7.A0.94">教学科研</span></h2>
+<p>医院设有临床科室67个，医技科室27个，研究室（所）16个，现有临床一级学科博士后流动站1个，博士、硕士学位授予点25个，年培养博士、硕士研究生300余名。拥有全国重点学科、省市重点学科和特色专业22个，三分以上学科达国内先进水平。拥有造型别致、功能齐全、代表国内先进水平的<a href="/w/%E5%A4%96%E7%A7%91" title="外科">外科</a>病房大楼、<a href="/w/%E5%86%85%E7%A7%91" title="内科">内科</a>病房大楼、<a href="/w/%E9%97%A8%E8%AF%8A" title="门诊">门诊</a>大楼、特需保健病房、国内一流的数字化图书馆和现代化的继续教育与临床技能培训中心，拥有现代化<a href="/w/%E5%B1%82%E6%B5%81" title="层流">层流</a><a href="/w/%E6%89%8B%E6%9C%AF%E5%AE%A4" title="手术室">手术室</a>38间、MM50电子回旋加速器、1.5T<a href="/w/%E6%A0%B8%E7%A3%81%E5%85%B1%E6%8C%AF" title="核磁共振">核磁共振</a>、双探头ECT、64层螺旋CT、<a href="/index.php?title=%E5%B9%B3%E6%9D%BFDSA&amp;action=edit&amp;redlink=1" class="new" title="平板DSA（尚未撰写）" rel="nofollow">平板DSA</a>、DR系统、高能直线加速器、<a href="/w/%E6%BF%80%E5%85%89" title="激光">激光</a><a href="/w/%E5%85%B1%E8%81%9A%E7%84%A6%E6%98%BE%E5%BE%AE%E9%95%9C" title="共聚焦显微镜">共聚焦显微镜</a>、<a href="/w/%E5%9F%BA%E5%9B%A0" title="基因">基因</a>分析仪、各种现代化检验设备等国际一流的高精尖设备，设备总值达7亿元，其中万元以上设备3000台件，为高水平<a href="/w/%E4%B8%B4%E5%BA%8A%E8%AF%8A%E6%96%AD" title="临床诊断">临床诊断</a>和治疗提供了有力保证。以HIS、PACS为主导的的高效的信息系统，构筑了国内领先的数字化医院建设平台，为高效率的医疗服务提供了保障。急危重症抢救、腔镜微创技术、介入诊断和治疗、<a href="/w/%E5%99%A8%E5%AE%98%E7%A7%BB%E6%A4%8D" title="器官移植">器官移植</a>、<a href="/w/%E5%B9%B2%E7%BB%86%E8%83%9E" title="干细胞">干细胞</a>诊断与治疗、医药<a href="/w/%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF" title="生物技术">生物技术</a>诊断与治疗等高新技术的大量开展，很好地实现了医疗技术与世界前沿的接轨，为人民群众提供了良好的医疗服务条件。目前，医院正向着“数字化医院管理，</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/w/%E6%96%87%E4%BB%B6:Bkphv.jpg" class="image"><img alt="Bkphv.jpg" src="http://p.ayxbk.com/images/thumb/2/2a/Bkphv.jpg/200px-Bkphv.jpg" width="200" height="150" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/w/%E6%96%87%E4%BB%B6:Bkphv.jpg" class="internal" title="放大"><img src="http://s.ayxbk.com/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+</div>
+</div>
+</div>
+<p>人性化医疗流程，高水平科技创新，低成本高效经营”一流现代化医院的宏伟建设目标大步前进。</p>
+<h2><span class="mw-headline" id=".E5.8F.91.E5.B1.95.E6.80.9D.E8.B7.AF">发展思路</span></h2>
+<p>为探索一条真正符合卫生国情的新路子，近年来，医院作为青岛大学医疗集团的核心医院，根据集团发展的总体思路，提出了有利于提高医院核心竞争力和效益，有利于解决群众的热点和难点问题，有利于与国家宏观卫生政策相衔接，统一质量管理，统一物资配送，统一文化理念，统一服务价格，实现管理联合、资源联合、人员联合、技术联合的“三四四”原则，成功构建了“以城市综合性龙头医院为主体建立面向广大社区和农村，涵盖三级、二级、一级、社区、农村等医院在内的纵向医疗服务网络”，最大限度地发挥了各项医疗卫生资源的效益，最大程度地满足了农村、城市社区等广大人民群众不同层次、日益增长的医疗保健需求。这一符合中国国情的纵向医疗网络的建立和不断完善，在为百姓造福的同时，赢得了卫生同行及卫生部、省卫生厅和各级政府的高度认可与赞誉。这一长效机制的建立，有效缓解了“看病难、看病贵”的问题，为实现 “小病不出村、大病不出县；小病进社区，大病进医院”的卫生改革目标作做出了积极努力。目前，医疗集团正在大学的大力支持下，积极整合各项医学教育、医疗卫生和社会各界资源，走上全面、协调、可持续发展的道路。</p>
+<h2><span class="mw-headline" id=".E5.8C.BB.E9.99.A2.E7.99.BE.E5.B9.B4.E5.8E.86.E5.8F.B2.E6.B2.BF.E9.9D.A9">医院百年历史沿革</span></h2>
+<h3><span class="mw-headline" id="1.E3.80.81.281898-1914.E5.B9.B4.29">1、(1898-1914年)</span></h3>
+<p>德占时期(1898-1914年)</p>
+<p>1897年11月，德国远东舰队侵占胶澳（胶州湾）。为巩固殖民统治，德国占领者决定建造医院。1898年10月至1899年10月，医院完成第一期建筑工程，年底交付使用。新建医院命名为“大德胶澳督署医院”，俗称“总督府医院”，负责人为德国医学博士马尔梯姆（Martim）教授。1904年又在郊区建立李村医院，是最早的分院。德国占领者从1898年到1906年用九年时间，共花费198万马克，将医院全部建成。</p>
+<h3><span class="mw-headline" id="2.E3.80.81.EF.BC.881915-1937.E5.B9.B46.E6.9C.88.EF.BC.89">2、（1915-1937年6月）</span></h3>
+<p>第一次日占、北洋政府和南京政府统治时期（1915-1937年6月）</p>
+<p>1914年11月11日，日本借第一次世界大战之机取代德国，侵占了胶澳，医院被日本侵略军占用，改称陆军病院，由陆军三等军医正我妻孝助之任院长。尔后，又开设了济南、坊子两分院。1915年，日本占领当局在院外路东的现江苏路19号处开设青岛疗病院。1916年，青岛疗病院改名青岛病院并迁入陆军病院内。1922年12月，日本被迫向中国北洋政府交还青岛主权，但在青岛仍然保留了大量特权和利益。日方以投资巨大为借口仗势继续经营青岛病院。1929年，国民政府接管胶澳，改称青岛。但由于国民党推行“攘外必先安内”的政策，不向日方交涉收回医院，医院仍隶属日本同仁会。</p>
+<h3><span class="mw-headline" id="3.E3.80.81.EF.BC.881937.E5.B9.B47.E6.9C.88-1945.E5.B9.B48.E6.9C.88.EF.BC.89">3、（1937年7月-1945年8月）</span></h3>
+<p><b>第二次日占时期（1937年7月-1945年8月）</b></p>
+<p>1938年1月10日，日本侵略军第二次侵占青岛，医院被日本陆军占用，成为陆军医院。同仁会青岛医院被编为战时医疗组织，改称同仁会青岛医院诊疗班，只在现江苏路19号处开设门诊。尔后，在院外现江苏路43号处设40张床位的临时病房，在台东、台西镇增设两个诊疗所。1940年6月，栗本定治郎将台西镇诊疗所移交青岛市卫生局，撤销了台东镇诊疗所。10月，陆军医院迁出，医院逐步恢复并扩大业务。1941年11月，改称同仁会青岛诊疗班。</p>
+<h3><span class="mw-headline" id="4.E3.80.81.EF.BC.881945.E5.B9.B49.E6.9C.88-1949.E5.B9.B45.E6.9C.88.EF.BC.89">4、（1945年9月-1949年5月）</span></h3>
+<p><b>南京国民政府统治时期（1945年9月-1949年5月）</b></p>
+<p>1945年8月15日，日本战败无条件投降。11月6日，青岛市政府派教育局长孟云桥、博济医院院长陈志藻等一行接收同仁会青岛诊疗班，指定王斐先为负责人，日籍医护人员纷纷回国，留下田中朝三等9人继续任职。1946年1月，南京国民政府教育部和社会部卫生署商定，将接收的诊疗班移交山东大学。3月1日，命名为“国立山东大学附属医院”。</p>
+<h3><span class="mw-headline" id="5.E3.80.81.EF.BC.881949.E5.B9.B46.E6.9C.88-1998.E5.B9.B46.E6.9C.88.EF.BC.89">5、（1949年6月-1998年6月）</span></h3>
+<p><b>建国以后（1949年6月-1998年6月）</b></p>
+<p>1949年6月2日青岛解放，医院从此获得新生。翌日，中国人民解放军青岛市军事管制委员会派出王滋才、王乐三为军代表接管医院，医院改称山东大学医学院附设医院。王滋才为首席军代表，潘作新任院长，医院隶属华东军政（行政）委员会卫生部和山东大学。在中国共产党和人民政府的正确领导下，医院呈现出一派新的气象。1956年3月，中华人民共和国高等教育部批准山东大学医学院在青岛独立建院，定名为青岛医学院。9月，医院改称为青岛医学院附属医院，隶属省卫生厅和青岛医学院。1993年，青岛医学院并入青岛大学，改称青岛大学医学院。医院改称为青岛大学医学院附属医院。</p>
+<h2><span class="mw-headline" id=".E5.8C.BB.E9.99.A2.E5.9C.B0.E5.9D.80">医院地址</span></h2>
+<p>青岛市江苏路16号</p>
+<p>东院区地址：崂山区海尔路59号</p>
+<h2><span class="mw-headline" id=".E9.9D.92.E5.B2.9B.E5.A4.A7.E5.AD.A6.E5.8C.BB.E5.AD.A6.E9.99.A2.E9.99.84.E5.B1.9E.E5.8C.BB.E9.99.A2.E9.99.84.E8.BF.91.E7.9A.84.E5.8C.BB.E9.99.A2">青岛大学医学院附属医院附近的医院</span></h2>
+<ul>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%8F%A3%E8%85%94%E5%8C%BB%E9%99%A2" title="青岛市口腔医院">青岛市口腔医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市龙山路1号甲</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-83838065，82792425</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2" title="青岛市人民医院">青岛市人民医院</a>（青岛市红十字会医院）</b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市市南区安徽路21号</li>
+<li><b>医院等级</b>：三级甲等</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82826722;0532-82852108</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2%E9%9D%92%E5%B2%9B%E5%B8%82%E7%BA%A2%E5%8D%81%E5%AD%97%E4%BC%9A%E5%8C%BB%E9%99%A2" title="青岛市人民医院青岛市红十字会医院">青岛市人民医院青岛市红十字会医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市安徽路21号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-2826722、2852108</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E7%9A%AE%E8%82%A4%E7%97%85%E9%98%B2%E6%B2%BB%E9%99%A2" title="青岛市皮肤病防治院">青岛市皮肤病防治院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市市南区安徽路21号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82852225，82852181</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%95%86%E4%B8%9A%E8%81%8C%E5%B7%A5%E5%8C%BB%E9%99%A2" title="青岛市商业职工医院">青岛市商业职工医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市市北区海泊路6号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82848458</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%B8%82%E7%AB%8B%E5%8C%BB%E9%99%A2" title="青岛市市立医院">青岛市市立医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市胶州路1号</li>
+<li><b>医院等级</b>：三级甲等</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82827191</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E7%AB%8B%E5%8C%BB%E9%99%A2" title="青岛市立医院">青岛市立医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市胶州路1号</li>
+<li><b>医院等级</b>：三级甲等</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82827191，85937600</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%BB%BA%E7%AD%91%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B%E6%80%BB%E5%85%AC%E5%8F%B8%E8%81%8C%E5%B7%A5%E5%8C%BB%E9%99%A2" title="青岛市建筑安装工程总公司职工医院">青岛市建筑安装工程总公司职工医院</a></b>
+<ul>
+<li><b>医院地址</b>：市北区上海路2号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-2828402</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%BB%BA%E7%AD%91%E6%9D%90%E6%96%99%E5%B7%A5%E4%B8%9A%E5%85%AC%E5%8F%B8%E8%81%8C%E5%B7%A5%E5%8C%BB%E9%99%A2" title="青岛市建筑材料工业公司职工医院">青岛市建筑材料工业公司职工医院</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市济阳路4号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82827396</li>
+</ul>
+</li>
+<li><b><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E6%80%A5%E6%95%91%E4%B8%AD%E5%BF%83" title="青岛市急救中心">青岛市急救中心</a></b>
+<ul>
+<li><b>医院地址</b>：山东省青岛市济阳路6号</li>
+<li><b>经营方式</b>：国营</li>
+<li><b>联系电话</b>：0532-82827435</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id=".E5.8F.82.E7.9C.8B">参看</span></h2>
+<ul>
+<li><a href="/w/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="青岛市医院列表">青岛市医院列表</a></li>
+<li><a href="/w/%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="山东省医院列表">山东省医院列表</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="" style="font-size:110%;"><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="全国医院列表">医院列表</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="全国医院列表">全国医院列表</a> - <a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E6%8E%92%E5%90%8D" title="全国医院排名">全国医院排名</a> - <a href="/w/%E5%85%A8%E5%9B%BD%E4%B8%89%E7%94%B2%E5%8C%BB%E9%99%A2%E5%90%8D%E5%8D%95" title="全国三甲医院名单">三甲医院名单</a> - <a href="/w/%E5%8D%AB%E7%94%9F%E9%83%A8%E9%83%A8%E5%B1%9E%EF%BC%88%E7%AE%A1%EF%BC%89%E5%8C%BB%E9%99%A2%E5%90%8D%E5%8D%95" title="卫生部部属（管）医院名单">卫生部部属医院</a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">医院列表</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/%E5%8C%97%E4%BA%AC%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="北京市医院列表">北京</a></li>
+<li><a href="/w/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="上海市医院列表">上海</a></li>
+<li><a href="/w/%E5%A4%A9%E6%B4%A5%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="天津市医院列表">天津</a></li>
+<li><a href="/w/%E9%87%8D%E5%BA%86%E5%B8%82%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="重庆市医院列表">重庆</a></li>
+<li><a href="/w/%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="广东省医院列表">广东</a></li>
+<li><a href="/w/%E6%B5%99%E6%B1%9F%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="浙江省医院列表">浙江</a></li>
+<li><a href="/w/%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="江苏省医院列表">江苏</a></li>
+<li><a href="/w/%E5%90%89%E6%9E%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="吉林省医院列表">吉林</a></li>
+<li><a href="/w/%E5%AE%89%E5%BE%BD%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="安徽省医院列表">安徽</a></li>
+<li><a href="/w/%E9%9D%92%E6%B5%B7%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="青海省医院列表">青海</a></li>
+<li><a href="/w/%E7%A6%8F%E5%BB%BA%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="福建省医院列表">福建</a></li>
+<li><a href="/w/%E4%BA%91%E5%8D%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="云南省医院列表">云南</a></li>
+<li><a href="/w/%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="山东省医院列表">山东</a></li>
+<li><a href="/w/%E6%B2%B3%E5%8C%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="河北省医院列表">河北</a></li>
+<li><a href="/w/%E7%94%98%E8%82%83%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="甘肃省医院列表">甘肃</a></li>
+<li><a href="/w/%E5%B1%B1%E8%A5%BF%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="山西省医院列表">山西</a></li>
+<li><a href="/w/%E5%86%85%E8%92%99%E5%8F%A4%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="内蒙古自治区医院列表">内蒙古</a></li>
+<li><a href="/w/%E6%B9%96%E5%8D%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="湖南省医院列表">湖南</a></li>
+<li><a href="/w/%E6%B2%B3%E5%8D%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="河南省医院列表">河南</a></li>
+<li><a href="/w/%E5%AE%81%E5%A4%8F%E5%9B%9E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="宁夏回族自治区医院列表">宁夏</a></li>
+<li><a href="/w/%E6%96%B0%E7%96%86%E7%BB%B4%E5%90%BE%E5%B0%94%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="新疆维吾尔自治区医院列表">新疆</a></li>
+<li><a href="/w/%E5%9B%9B%E5%B7%9D%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="四川省医院列表">四川</a></li>
+<li><a href="/w/%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="黑龙江省医院列表">黑龙江</a></li>
+<li><a href="/w/%E9%99%95%E8%A5%BF%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="陕西省医院列表">陕西</a></li>
+<li><a href="/w/%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="江西省医院列表">江西</a></li>
+<li><a href="/w/%E6%B5%B7%E5%8D%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="海南省医院列表">海南</a></li>
+<li><a href="/w/%E8%B4%B5%E5%B7%9E%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="贵州省医院列表">贵州</a></li>
+<li><a href="/w/%E8%BE%BD%E5%AE%81%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="辽宁省医院列表">辽宁</a></li>
+<li><a href="/w/%E6%B9%96%E5%8C%97%E7%9C%81%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="湖北省医院列表">湖北</a></li>
+<li><a href="/w/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="西藏自治区医院列表">西藏</a></li>
+<li><a href="/w/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="广西壮族自治区医院列表">广西</a></li>
+<li><a href="/w/%E5%8F%B0%E6%B9%BE%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="台湾医院列表">台湾</a></li>
+<li><a href="/w/%E9%A6%99%E6%B8%AF%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="香港医院列表">香港</a></li>
+<li><a href="/w/%E6%BE%B3%E9%97%A8%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="澳门医院列表">澳门</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/w/%E5%8C%BB%E9%99%A2%E7%AD%89%E7%BA%A7" title="医院等级">医院等级</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/%E4%B8%80%E7%BA%A7%E4%B8%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="一级丙等医院列表">一级丙等</a></li>
+<li><a href="/w/%E4%B8%80%E7%BA%A7%E4%B9%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="一级乙等医院列表">一级乙等</a></li>
+<li><a href="/w/%E4%B8%80%E7%BA%A7%E7%94%B2%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="一级甲等医院列表">一级甲等</a></li>
+<li><a href="/w/%E4%BA%8C%E7%BA%A7%E4%B8%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="二级丙等医院列表">二级丙等</a></li>
+<li><a href="/w/%E4%BA%8C%E7%BA%A7%E4%B9%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="二级乙等医院列表">二级乙等</a></li>
+<li><a href="/w/%E4%BA%8C%E7%BA%A7%E7%94%B2%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="二级甲等医院列表">二级甲等</a></li>
+<li><a href="/w/%E4%B8%89%E7%BA%A7%E4%B8%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="三级丙等医院列表">三级丙等</a></li>
+<li><a href="/w/%E4%B8%89%E7%BA%A7%E4%B9%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="三级乙等医院列表">三级乙等</a></li>
+<li><a href="/w/%E5%85%A8%E5%9B%BD%E4%B8%89%E7%94%B2%E5%8C%BB%E9%99%A2%E5%90%8D%E5%8D%95" title="全国三甲医院名单">三级甲等</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">其它</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/%E5%A6%87%E4%BA%A7%E7%A7%91%E5%8C%BB%E9%99%A2%E5%8F%8A%E5%84%BF%E7%AB%A5%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="妇产科医院及儿童医院列表">妇产科及儿童医院</a></li>
+<li><a href="/w/%E5%85%A8%E5%9B%BD%E8%82%BF%E7%98%A4%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="全国肿瘤医院列表">肿瘤医院</a></li>
+<li><a href="/w/%E6%95%B4%E5%BD%A2%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%88%97%E8%A1%A8" title="整形美容院列表">整形美容院</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="中医院列表">中医院</a></li>
+<li><a href="/w/%E4%BB%A5%E5%BF%83%E8%A1%80%E7%AE%A1%E5%86%85%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以心血管内科为重点科室的医院列表">血管内科</a></li>
+<li><a href="/w/%E4%BB%A5%E9%AA%A8%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以骨科为重点科室的医院列表">骨科</a></li>
+<li><a href="/w/%E4%BB%A5%E6%B3%8C%E5%B0%BF%E5%A4%96%E7%A7%91%E4%B8%BA%E9%87%8D%E7%82%B9%E7%A7%91%E5%AE%A4%E7%9A%84%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8" title="以泌尿外科为重点科室的医院列表">泌尿外科</a></li>
+<li><a href="/index.php?title=%E5%85%A8%E5%9B%BD%E4%B8%89%E7%94%B2%E5%8C%BB%E9%99%A2%E5%9C%B0%E5%9D%80%E5%92%8C%E4%BA%BA%E4%BA%8B%E7%A7%91%E8%81%94%E7%B3%BB%E7%94%B5%E8%AF%9D%E5%A4%A7%E5%85%A8&amp;action=edit&amp;redlink=1" class="new" title="全国三甲医院地址和人事科联系电话大全（尚未撰写）" rel="nofollow">三甲医院人事科电话</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 367/1000000
+Post-expand include size: 15657/2097152 bytes
+Template argument size: 6458/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ahospital:pcache:idhash:78630-0!1!0!!zh-hans!2!edit=0 and timestamp 20200827222016 -->
+<div id="fromlink">出自A+医学百科 “青岛大学医学院附属医院”条目 <a href="http://www.a-hospital.com/w/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" class="external free" target="_blank">http://www.a-hospital.com/w/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2</a> 转载请保留此链接</div><div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_count" data-cmd="count"></a></div>
+<table class="msg-table">
+
+<tr style="background-color:rgb(206, 223, 242);">
+<td><b>关于“<strong class="selflink">青岛大学医学院附属医院</strong>”的留言：</b>
+</td><td align="right"><img alt="Feed-icon.png" src="http://p.ayxbk.com/images/f/f4/Feed-icon.png" width="12" height="12" /> <a href="http://www.a-hospital.com/index.php?title=%E8%AE%A8%E8%AE%BA:%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;feed=rss&amp;action=history" class="external text" target="_blank">订阅讨论RSS</a>
+</td></tr>
+<tr>
+<td colspan="2" style="background-color:#ffffff;">
+<p>目前暂无留言
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="http://www.a-hospital.com/index.php?title=%E8%AE%A8%E8%AE%BA:%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;action=edit&amp;section=new&amp;preload=%E6%A8%A1%E6%9D%BF%3A%E7%AD%BE%E5%90%8D&amp;editintro=%E6%A8%A1%E6%9D%BF%3A%E7%AD%BE%E5%90%8D%E8%AF%B4%E6%98%8E&amp;preloadtitle=%E7%BB%99%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2%E6%9D%A1%E7%9B%AE%E7%9A%84%E7%95%99%E8%A8%80" class="external text" target="_blank">添加留言</a>
+</td></tr></table>
+<h2> <span class="mw-headline" id=".E6.9B.B4.E5.A4.9A.E5.8C.BB.E5.AD.A6.E7.99.BE.E7.A7.91.E6.9D.A1.E7.9B.AE">更多医学百科条目</span></h2>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="特殊:页面分类">6个分类</a>: <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E5%8C%BB%E9%99%A2" title="分类:医院">医院</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%8C%BB%E9%99%A2" title="分类:山东省医院">山东省医院</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E5%B1%B1%E4%B8%9C%E7%9C%81" title="分类:山东省">山东省</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E9%9D%92%E5%B2%9B%E5%B8%82%E5%8C%BB%E9%99%A2" title="分类:青岛市医院">青岛市医院</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E9%9D%92%E5%B2%9B%E5%B8%82" title="分类:青岛市">青岛市</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E4%B8%89%E7%BA%A7%E7%94%B2%E7%AD%89%E5%8C%BB%E9%99%A2" title="分类:三级甲等医院">三级甲等医院</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>个人工具</h5>
+	<ul>
+					<li  id="pt-login"><a href="/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o" rel="nofollow">登录／创建账户</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>名字空间</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/w/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" rel="nofollow"  title="查看页面内容 [c]" accesskey="c"><span>页面</span></a></li>
+					<li  id="ca-talk" class="new"><a href="/index.php?title=%E8%AE%A8%E8%AE%BA:%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;action=edit&amp;redlink=1" rel="nofollow"  title="关于页面正文的讨论 [t]" accesskey="t"><span>讨论</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>查看</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/w/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" rel="nofollow"><span>阅读</span></a></li>
+					<li id="ca-trans"><a href="http://cht.a-hospital.com/w/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" rel="alternate" hreflang="zh-Hant"><span>繁体/正体</span></a></li>
+					<li id="ca-viewsource"><a href="/index.php?title=%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;action=edit" rel="nofollow" title="修正、补充或整理本条目。 [e]" accesskey="e"><span>编辑修改</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/index.php?title=%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;action=history" rel="nofollow" title="此页面的早前修订版本 [h]" accesskey="h"><span>修订历史</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>动作</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">搜索</label></h5>
+	<form action="/index.php" id="searchform">
+		<input type='hidden' name="title" value="特殊:搜索"/>
+		<div id="simpleSearch">
+							<input id="searchInput"  onfocus="if (this.value == '搜索') {this.value = '';}" onblur="if (this.value == '') {this.value = '搜索';}" name="search" type="text"  title="搜索该网站 [f]" accesskey="f"  value="搜索"  />
+						<button id="searchButton" type='submit' name='button'  title="搜索该文字的页面">&nbsp;</button>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://s.ayxbk.com/common/images/logo.png);" href="/w/%E9%A6%96%E9%A1%B5"  title="访问首页"></a></div>
+				<!-- /logo -->
+				  
+<div class="portal" id='p-navigation'>
+	<h5>导航</h5>
+	<div class="body">
+				<ul>
+					<li><a href="/w/%E9%A6%96%E9%A1%B5" title="访问首页 [z]" accesskey="z">首页</a></li>
+					<li><a href="/w/%E5%A4%A7%E5%8C%BB%E7%B2%BE%E8%AF%9A">大医精诚</a></li>
+					<li><a href="/w/%E4%BA%BA%E4%BD%93%E7%A9%B4%E4%BD%8D%E5%9B%BE">人体穴位图</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF%E5%9B%BE%E5%85%B8">中药图典</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8">全国医院列表</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E7%94%B5%E5%AD%90%E4%B9%A6">医学电子书</a></li>
+					<li><a href="/w/%E8%8D%AF%E5%93%81">药品百科</a></li>
+					<li><a href="/w/%E4%B8%AD%E5%8C%BB">中医百科</a></li>
+					<li><a href="/w/%E7%96%BE%E7%97%85%E8%AF%8A%E6%96%AD">疾病诊断</a></li>
+					<li><a href="/w/%E6%80%A5%E6%95%91%E5%B8%B8%E8%AF%86">急救常识</a></li>
+					<li><a href="/w/%E7%96%BE%E7%97%85">疾病查询</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF">中药百科</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF%E6%96%B9%E5%89%82">中医方剂大全</a></li>
+					<li><a href="/w/%E6%80%8E%E6%A0%B7%E7%9C%8B%E5%8C%96%E9%AA%8C%E5%8D%95">怎样看化验单</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%88%B6%E8%8D%AF%E4%BC%81%E4%B8%9A%E5%88%97%E8%A1%A8">全国制药企业</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%A7%91%E9%99%A2%E6%A0%A1%E5%88%97%E8%A1%A8">医科院校大全</a></li>
+					<li><a href="/w/%E5%8C%BB%E4%BA%8B%E6%BC%AB%E8%B0%88">医事漫谈</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E4%B8%8B%E8%BD%BD">医学下载</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E8%A7%86%E9%A2%91">医学视频</a></li>
+				</ul>
+			</div>
+</div>
+  
+<div class="portal" id='p-.E6.8E.A8.E8.8D.90.E5.B7.A5.E5.85.B7'>
+	<h5>推荐工具</h5>
+	<div class="body">
+				<ul>
+					<li><a href="http://www.adaohang.com/health.html">医学网站大全</a></li>
+					<li><a href="http://www.mcd8.com/">医学词典</a></li>
+					<li><a href="http://blog.a-hospital.com/">医学资讯博客</a></li>
+				</ul>
+			</div>
+</div>
+  
+<div class="portal" id='p-.E5.8A.9F.E8.83.BD.E8.8F.9C.E5.8D.95'>
+	<h5>功能菜单</h5>
+	<div class="body">
+				<ul>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E6%B7%BB%E5%8A%A0%E6%9D%A1%E7%9B%AE" rel="nofollow">添加页面</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E6%8B%9B%E5%8B%9F%E7%99%BE%E7%A7%91%E5%BF%97%E6%84%BF%E8%80%85" rel="nofollow">志愿者招募中</a></li>
+					<li><a href="/w/%E7%89%B9%E6%AE%8A:ContributionScores" rel="nofollow">积分排名</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E%E5%B9%BF%E5%91%8A" rel="nofollow">关于广告</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%BD%91%E7%AB%99%E4%BA%8B%E5%8A%A1">网站事务</a></li>
+					<li><a href="/w/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+				</ul>
+			</div>
+</div>
+<div class="portal" id="p-tb">
+	<h5>工具箱</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+						<li id="t-recentchangeslinked"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2" title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+																																												<li id="t-specialpages"><a href="/w/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="所有特殊页面列表 [q]" accesskey="q">所有特殊页面</a></li>
+									<li id="t-print"><a href="/index.php?title=%E9%9D%92%E5%B2%9B%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E5%8C%BB%E9%99%A2&amp;printable=yes" rel="nofollow" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+						</ul>
+	</div>
+</div>
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-credits">此页由A+医学百科用户<a rel="nofollow" href="/w/%E7%94%A8%E6%88%B7:%E8%A1%8C%E5%8C%BB" title="用户:行医">行医</a>于2012年4月2日 (星期一) 03:09最后更改。 </li>
+																							<li id="footer-info-copyright"><br />本站内容由网友添加和整理，仅供学习和参考。站内信息不一定准确、全面或最新。<br />
+网站内容不应成为诊断或治疗疾病的最终依据。A+医学百科提醒网友，如有身体不适，请及时就医。<br />
+本站的全部文本内容在<a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%89%88%E6%9D%83" title="A+医学百科:版权">知识共享 署名-相同方式共享 3.0协议</a>之条款下提供。<br /></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96" title="A+医学百科:隐私政策">隐私政策</a></li>
+																							<li id="footer-places-about"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E" title="A+医学百科:关于">关于A+医学百科</a></li>
+																							<li id="footer-places-disclaimer"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="A+医学百科:免责声明">免责声明</a></li>
+															</ul>
+										<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+						<script>window._bd_share_config={"common":{"bdSign":"off","bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","weixin","tqq","tsina","fbook"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","weixin","tqq","tsina","fbook"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+				
+<script>
+var skin="vector",
+stylepath="http://s.ayxbk.com",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|mailto\\:",
+wgArticlePath="/w/$1",
+wgScriptPath="",
+wgScriptExtension=".php",
+wgScript="/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.a-hospital.com",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="青岛大学医学院附属医院",
+wgTitle="青岛大学医学院附属医院",
+wgAction="view",
+wgArticleId=78630,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="zh-hans",
+wgContentLanguage="zh-hans",
+wgBreakFrames=true,
+wgCurRevisionId=392507,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="首页",
+wgFormattedNamespaces={"-2": "媒体", "-1": "特殊", "0": "", "1": "讨论", "2": "用户", "3": "用户讨论", "4": "A+医学百科", "5": "A+医学百科讨论", "6": "文件", "7": "文件讨论", "8": "MediaWiki", "9": "MediaWiki讨论", "10": "模板", "11": "模板讨论", "12": "帮助", "13": "帮助讨论", "14": "分类", "15": "分类讨论", "420": "Layer", "421": "Layer talk"},
+wgSiteName="A+医学百科",
+wgCategories=["医院", "山东省医院", "山东省", "青岛市医院", "青岛市", "三级甲等医院"],
+wgMWSuggestTemplate="http://www.a-hospital.com/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="ahospital",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["有建议", "无建议"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="http://s.ayxbk.com/common/main-mini.js?278"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("http://s.ayxbk.com/vector/csshover.htc")}</style><![endif]-->
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-1856547-6";
+</script>
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1856547-6");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=zh-CN&amp;key=AIzaSyBqPw2BmgtcB6r_gYjzgqj2n9NaqibxHPE"></script><script src="/extensions/Maps/includes/services/GoogleMaps3/GoogleMap3Functions.js?270-0.7.8"></script><!-- 78630 --><script>addOnloadHook( function() { 		initGMap3(
+			"map_google3_1",
+			{	
+				scrollwheel: false,
+				zoom: 14,
+				lat: 36.066909,
+				lon: 120.327641,	
+				types: [],
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			},
+			[{"lat": "36.066909", "lon": "120.327641", "title": "\x3cp\x3e青岛大学医学院附属医院\n\x3c/p\x3e", "label": "", "icon": ""}]
+		); } );</script>		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- Served in 0.285 secs. -->			</body>
+<!-- Cached/compressed 20200827222016 -->
+</html>
+
+"""
+    response = HtmlResponse(url='http://www.a-hospital.com/w/%E9%87%8D%E5%BA%86%E8%8D%AF%E5%8F%8B%E5%88%B6%E8%8D%AF%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8',
+                            body=body, encoding='utf8')
+    ppl = AhospitalPipeline()
+    spider = HospitalSpider() 
+    ppl.open_spider(spider)
+    resp_iter = spider.parse(response)
+    try:
+        page = next(resp_iter)
+        assert False
+    except StopIteration:
+        print("pass")
+
+def test_skip_recently_crawled():
+    body = """
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="zh-hans" dir="ltr">
+<head>
+<title>中医妇科/缺乳 - A+医学百科</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="MediaWiki 1.16.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="apple-touch-icon" href="http://s.ayxbk.com/common/images/apple-touch-icon.png" />
+<link rel="shortcut icon" href="http://s.ayxbk.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="A+医学百科 (zh-hans)" />
+<link rel="copyright" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%89%88%E6%9D%83" />
+<link rel="stylesheet" href="http://s.ayxbk.com/vector/main-mini.css?278" media="screen" />
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-中医妇科_缺乳 skin-vector">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		     (adsbygoogle = window.adsbygoogle || []).push({
+		          google_ad_client: "ca-pub-4174070858627065",
+		          enable_page_level_ads: true
+		     });
+		</script>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" >
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">中医妇科/缺乳</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					跳转到： <a href="#mw-head">导航</a>,
+					<a href="#p-search">搜索</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<p></p>
+<table width="100%" class="hierarchy-breadcrumb">
+<tr>
+<td width="95%" align="left nowrap"><small><a href="/w/%E5%8C%BB%E5%AD%A6%E7%94%B5%E5%AD%90%E4%B9%A6" title="医学电子书">医学电子书</a> &gt;&gt; 《<a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91%E5%AD%A6" title="中医妇科学">中医妇科学</a>》 &gt;&gt; <a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E7%97%85" title="中医妇科/产后病">产后病</a> &gt;&gt; 缺乳</small></td>
+</tr>
+</table>
+<table class="hierarchy-list" align="right">
+<tr>
+<td style="background: #cedff2; padding: 0.2em; white-space: nowrap;"><b><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91%E5%AD%A6" title="中医妇科学">中医妇科学</a></b></td>
+</tr>
+<tr>
+<td style="text-align:left; white-space: nowrap;">
+<ul>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E7%97%85" title="中医妇科/产后病">产后病</a>
+<ul>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E8%A1%80%E6%99%95" title="中医妇科/产后血晕">产后血晕</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E8%A1%80%E5%B4%A9" title="中医妇科/产后血崩">产后血崩</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E8%85%B9%E7%97%9B" title="中医妇科/产后腹痛">产后腹痛</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E7%97%89%E8%AF%81" title="中医妇科/产后痉证">产后痉证</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E5%8F%91%E7%83%AD" title="中医妇科/产后发热">产后发热</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E8%BA%AB%E7%97%9B" title="中医妇科/产后身痛">产后身痛</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E6%81%B6%E9%9C%B2%E4%B8%8D%E7%BB%9D" title="中医妇科/恶露不绝">恶露不绝</a></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E5%B0%8F%E4%BE%BF%E4%B8%8D%E9%80%9A" title="中医妇科/产后小便不通">产后小便不通</a></li>
+<li><strong class="selflink">缺乳</strong></li>
+<li><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E5%9B%9E%E4%B9%B3" title="中医妇科/回乳">回乳</a></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<hr />
+<p><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91%E5%AD%A6%E7%9B%AE%E5%BD%95" title="中医妇科学目录">中医妇科学目录</a></p>
+</td>
+</tr>
+</table>
+<p><a href="/w/%E5%93%BA%E4%B9%B3%E6%9C%9F" title="哺乳期">哺乳期</a>间，产妇乳汁甚少或全无，称为“缺乳”，亦称“乳汁不行”或“乳汁不足”。</p>
+<p>［病因<a href="/w/%E7%97%85%E6%9C%BA" title="病机">病机</a>］</p>
+<p>发病机理一为化源不足，二为瘀滞不行。常见分型有气<a href="/w/%E8%A1%80%E8%99%9A" title="血虚">血虚</a>弱、<a href="/index.php?title=%E8%82%9D%E6%B0%94%E9%83%81%E6%BB%9E&amp;action=edit&amp;redlink=1" class="new" title="肝气郁滞（尚未撰写）" rel="nofollow">肝气郁滞</a>。</p>
+<p>一、气血虚弱</p>
+<p>素体气血虚弱，复因产时<a href="/w/%E5%A4%B1%E8%A1%80" title="失血">失血</a>耗气，气血亏虚，或<a href="/w/%E8%84%BE%E8%83%83%E8%99%9A%E5%BC%B1" title="脾胃虚弱">脾胃虚弱</a>，气血生化不足，以致气血虚弱无以化乳，则产后乳汁甚少或全无。</p>
+<p>二、<a href="/w/%E8%82%9D%E9%83%81" title="肝郁">肝郁</a>气滞</p>
+<p>索性<a href="/w/%E6%8A%91%E9%83%81" title="抑郁" class="mw-redirect">抑郁</a>，或产后<a href="/w/%E4%B8%83%E6%83%85" title="七情">七情</a>所伤，肝失条达，<a href="/w/%E6%B0%94%E6%9C%BA" title="气机">气机</a>不畅，<a href="/w/%E6%B0%94%E8%A1%80%E5%A4%B1%E8%B0%83" title="气血失调">气血失调</a>，以致<a href="/w/%E7%BB%8F%E8%84%89" title="经脉">经脉</a>涩滞，阻碍乳汁运行，因而缺乳。</p>
+<p>［<a href="/w/%E8%BE%A8%E8%AF%81%E8%AE%BA%E6%B2%BB" title="辨证论治">辨证论治</a>］</p>
+<p>缺乳有<a href="/w/%E8%99%9A%E5%AE%9E" title="虚实">虚实</a>两端。一般<a href="/w/%E4%B9%B3%E6%88%BF" title="乳房">乳房</a>柔软、乳汁清稀者，多为<a href="/w/%E8%99%9A%E8%AF%81" title="虚证">虚证</a>；乳房胀硬而痛，乳汁浓稠者，多为<a href="/w/%E5%AE%9E%E8%AF%81" title="实证">实证</a>。虚者<a href="/w/%E8%A1%A5%E6%B0%94" title="补气">补气</a><a href="/w/%E5%85%BB%E8%A1%80" title="养血">养血</a>，实者<a href="/w/%E7%96%8F%E8%82%9D" title="疏肝">疏肝</a><a href="/w/%E8%A7%A3%E9%83%81" title="解郁">解郁</a>，均宜佐以<a href="/w/%E9%80%9A%E4%B9%B3" title="通乳">通乳</a>之品。</p>
+<p>一、气血虚弱型</p>
+<p>主要证候：产后乳少，甚或全无，乳汁清稀，乳房柔软，无胀满感，神倦食少，面色无华，<a href="/w/%E8%88%8C%E6%B7%A1" title="舌淡">舌淡</a>，苔少，脉细弱。</p>
+<p>证候分析：气血虚弱，乳汁化源不足，无乳可下，故乳少或全无；<a href="/w/%E4%B9%B3%E8%85%BA" title="乳腺">乳腺</a>空虚，故乳房柔软，无胀满感；<a href="/w/%E6%B0%94%E8%A1%80%E4%B8%8D%E8%B6%B3" title="气血不足">气血不足</a>，阳气不振，脾失健运，故神倦食少；<a href="/w/%E6%B0%94%E8%99%9A" title="气虚">气虚</a>血少，不能上荣，则面色无华。舌淡，苔少，脉细弱，为气血不足之征。</p>
+<p>治疗法则：补气养血，佐以通乳。</p>
+<p>方药举例：通乳丹（《傅青主女科》）。</p>
+<p><a href="/w/%E4%BA%BA%E5%8F%82" title="人参">人参</a>、<a href="/w/%E7%94%9F%E9%BB%84%E8%8A%AA" title="生黄芪">生黄芪</a>、<a href="/w/%E5%BD%93%E5%BD%92" title="当归">当归</a>、<a href="/w/%E9%BA%A6%E5%86%AC" title="麦冬">麦冬</a>、<a href="/w/%E6%9C%A8%E9%80%9A" title="木通">木通</a>、<a href="/w/%E6%A1%94%E6%A2%97" title="桔梗">桔梗</a>、七孔<a href="/w/%E7%8C%AA%E8%B9%84" title="猪蹄">猪蹄</a></p>
+<p>方中人参、<a href="/w/%E9%BB%84%E8%8A%AA" title="黄芪">黄芪</a>大补<a href="/w/%E5%85%83%E6%B0%94" title="元气">元气</a>；当归、麦冬养血滋液；猪蹄<a href="/w/%E8%A1%A5%E8%A1%80" title="补血">补血</a>通乳；木通宣<a href="/w/%E7%BB%9C%E9%80%9A" title="络通" class="mw-redirect">络通</a>乳；桔梗载药上行。全方共奏补气养血，宣络通乳之效。</p>
+<p>若纳少<a href="/w/%E4%BE%BF%E6%BA%8F" title="便溏">便溏</a>者，酌加炒<a href="/w/%E7%99%BD%E6%9C%AF" title="白术">白术</a>、<a href="/w/%E8%8C%AF%E8%8B%93" title="茯苓">茯苓</a>、山药以<a href="/w/%E5%81%A5%E8%84%BE" title="健脾">健脾</a>止泻。</p>
+<p>二、肝气郁滞型</p>
+<p>主要证候：产后乳汁涩少，浓稠，或乳汁不下，乳房胀硬疼痛，情志抑郁，胸胁胀闷，<a href="/w/%E9%A3%9F%E6%AC%B2%E4%B8%8D%E6%8C%AF" title="食欲不振">食欲不振</a>，或身有微热，<a href="/w/%E8%88%8C%E8%B4%A8" title="舌质">舌质</a>正常，苔薄黄，<a href="/w/%E8%84%89%E5%BC%A6" title="脉弦">脉弦</a>细或弦数。</p>
+<p>证候分析：情志不舒，<a href="/w/%E8%82%9D%E6%B0%94%E9%83%81%E7%BB%93" title="肝气郁结">肝气郁结</a>，气机不畅，乳脉<a href="/w/%E6%B7%A4%E6%BB%9E" title="淤滞">淤滞</a>，致令乳汁不得出而乳汁涩少；乳汁淤积，则乳房胀硬、疼痛，乳汁浓稠；肝脉布胁肋，肝气郁滞，失于宣达，则胸胁胀闷；<a href="/w/%E8%82%9D%E6%B0%94" title="肝气">肝气</a>不舒，则情志抑郁；木郁克土，脾失健运，则食欲不振；乳淤日久化热，则身有微热。舌质正常，苔薄黄，脉弦细或弦数，为肝郁气滞或化热之征。</p>
+<p>治疗法则：疏肝解郁，<a href="/index.php?title=%E6%B4%BB%E7%BB%9C%E9%80%9A&amp;action=edit&amp;redlink=1" class="new" title="活络通（尚未撰写）" rel="nofollow">活络通</a>乳。</p>
+<p>方药举例：<a href="/w/%E4%B8%8B%E4%B9%B3%E6%B6%8C%E6%B3%89%E6%95%A3" title="下乳涌泉散">下乳涌泉散</a>（《清太医院配方》）。</p>
+<p>当归、<a href="/w/%E5%B7%9D%E8%8A%8E" title="川芎">川芎</a>、<a href="/w/%E5%A4%A9%E8%8A%B1%E7%B2%89" title="天花粉">天花粉</a>、<a href="/w/%E7%99%BD%E8%8A%8D" title="白芍" class="mw-redirect">白芍</a>药、<a href="/w/%E7%94%9F%E5%9C%B0%E9%BB%84" title="生地黄">生地黄</a>、<a href="/w/%E6%9F%B4%E8%83%A1" title="柴胡">柴胡</a>、<a href="/w/%E9%9D%92%E7%9A%AE" title="青皮">青皮</a>、<a href="/w/%E6%BC%8F%E8%8A%A6" title="漏芦">漏芦</a>、桔梗、<a href="/w/%E9%80%9A%E8%8D%89" title="通草" class="mw-redirect">通草</a>、<a href="/w/%E7%99%BD%E8%8A%B7" title="白芷">白芷</a>、<a href="/w/%E7%A9%BF%E5%B1%B1%E7%94%B2" title="穿山甲">穿山甲</a>、<a href="/w/%E7%8E%8B%E4%B8%8D%E7%95%99%E8%A1%8C" title="王不留行">王不留行</a>、<a href="/w/%E7%94%98%E8%8D%89" title="甘草">甘草</a></p>
+<p>方中青皮、<a href="/index.php?title=%E6%9F%B4%E8%83%A1%E8%88%92%E8%82%9D&amp;action=edit&amp;redlink=1" class="new" title="柴胡舒肝（尚未撰写）" rel="nofollow">柴胡舒肝</a>解郁；<a href="/index.php?title=%E5%9B%9B%E7%89%A9&amp;action=edit&amp;redlink=1" class="new" title="四物（尚未撰写）" rel="nofollow">四物</a>、天花粉养血滋液；穿山甲、王不留行、漏芦<a href="/w/%E6%B4%BB%E7%BB%9C" title="活络" class="mw-redirect">活络</a>下；乳；桔梗、通草宣络通乳；甘草调和诸药。全方共奏疏肝解郁，<a href="/index.php?title=%E9%80%9A%E7%BB%9C%E4%B8%8B%E4%B9%B3&amp;action=edit&amp;redlink=1" class="new" title="通络下乳（尚未撰写）" rel="nofollow">通络下乳</a>之效。</p>
+<h2><span class="mw-headline" id=".E5.8F.82.E7.9C.8B">参看</span></h2>
+<ul>
+<li><a href="/w/%E7%BC%BA%E4%B9%B3" title="缺乳">缺乳</a></li>
+</ul>
+<table width="100%" class="hierarchy-nav">
+<tr>
+<td align="center" width="100%" nowrap="nowrap"><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E5%B0%8F%E4%BE%BF%E4%B8%8D%E9%80%9A" title="32"><img alt="32" src="http://p.ayxbk.com/images/4/43/Goback.gif" width="32" height="32" /></a> <a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E4%BA%A7%E5%90%8E%E5%B0%8F%E4%BE%BF%E4%B8%8D%E9%80%9A" title="中医妇科/产后小便不通">产后小便不通</a>&#160;|&#160;<a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E5%9B%9E%E4%B9%B3" title="中医妇科/回乳">回乳</a> <a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E5%9B%9E%E4%B9%B3" title="32"><img alt="32" src="http://p.ayxbk.com/images/5/53/Gonext.gif" width="32" height="32" /></a></td>
+</tr>
+</table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 2694/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ahospital:pcache:idhash:95088-0!1!0!!zh-hans!2!edit=0 and timestamp 20181018203919 -->
+<div id="fromlink">出自A+医学百科 “中医妇科/缺乳”条目 <a href="http://www.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" class="external free" target="_blank">http://www.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3</a> 转载请保留此链接</div><div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_count" data-cmd="count"></a></div>
+<table class="msg-table">
+
+<tr style="background-color:rgb(206, 223, 242);">
+<td><b>关于“<strong class="selflink">中医妇科/缺乳</strong>”的留言：</b>
+</td><td align="right"><img alt="Feed-icon.png" src="http://p.ayxbk.com/images/f/f4/Feed-icon.png" width="12" height="12" /> <a href="http://www.a-hospital.com/index.php?title=%E8%AE%A8%E8%AE%BA:%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;feed=rss&amp;action=history" class="external text" target="_blank">订阅讨论RSS</a>
+</td></tr>
+<tr>
+<td colspan="2" style="background-color:#ffffff;">
+<p>目前暂无留言
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="http://www.a-hospital.com/index.php?title=%E8%AE%A8%E8%AE%BA:%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;action=edit&amp;section=new&amp;preload=%E6%A8%A1%E6%9D%BF%3A%E7%AD%BE%E5%90%8D&amp;editintro=%E6%A8%A1%E6%9D%BF%3A%E7%AD%BE%E5%90%8D%E8%AF%B4%E6%98%8E&amp;preloadtitle=%E7%BB%99%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91%2F%E7%BC%BA%E4%B9%B3%E6%9D%A1%E7%9B%AE%E7%9A%84%E7%95%99%E8%A8%80" class="external text" target="_blank">添加留言</a>
+</td></tr></table>
+<h2> <span class="mw-headline" id=".E6.9B.B4.E5.A4.9A.E5.8C.BB.E5.AD.A6.E7.99.BE.E7.A7.91.E6.9D.A1.E7.9B.AE">更多医学百科条目</span></h2>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="特殊:页面分类">2个分类</a>: <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91%E5%AD%A6%E6%AD%A3%E6%96%87" title="分类:中医妇科学正文">中医妇科学正文</a></span> | <span dir='ltr'><a href="/w/%E5%88%86%E7%B1%BB:%E5%9B%BE%E4%B9%A6%E6%AD%A3%E6%96%87" title="分类:图书正文">图书正文</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>个人工具</h5>
+	<ul>
+					<li  id="pt-login"><a href="/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o" rel="nofollow">登录／创建账户</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>名字空间</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" rel="nofollow"  title="查看页面内容 [c]" accesskey="c"><span>页面</span></a></li>
+					<li  id="ca-talk" class="new"><a href="/index.php?title=%E8%AE%A8%E8%AE%BA:%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;action=edit&amp;redlink=1" rel="nofollow"  title="关于页面正文的讨论 [t]" accesskey="t"><span>讨论</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>查看</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" rel="nofollow"><span>阅读</span></a></li>
+					<li id="ca-trans"><a href="http://cht.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" rel="alternate" hreflang="zh-Hant"><span>繁体/正体</span></a></li>
+					<li id="ca-viewsource"><a href="/index.php?title=%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;action=edit" rel="nofollow" title="修正、补充或整理本条目。 [e]" accesskey="e"><span>编辑修改</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/index.php?title=%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;action=history" rel="nofollow" title="此页面的早前修订版本 [h]" accesskey="h"><span>修订历史</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>动作</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">搜索</label></h5>
+	<form action="/index.php" id="searchform">
+		<input type='hidden' name="title" value="特殊:搜索"/>
+		<div id="simpleSearch">
+							<input id="searchInput"  onfocus="if (this.value == '搜索') {this.value = '';}" onblur="if (this.value == '') {this.value = '搜索';}" name="search" type="text"  title="搜索该网站 [f]" accesskey="f"  value="搜索"  />
+						<button id="searchButton" type='submit' name='button'  title="搜索该文字的页面">&nbsp;</button>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://s.ayxbk.com/common/images/logo.png);" href="/w/%E9%A6%96%E9%A1%B5"  title="访问首页"></a></div>
+				<!-- /logo -->
+				  
+<div class="portal" id='p-navigation'>
+	<h5>导航</h5>
+	<div class="body">
+				<ul>
+					<li><a href="/w/%E9%A6%96%E9%A1%B5" title="访问首页 [z]" accesskey="z">首页</a></li>
+					<li><a href="/w/%E5%A4%A7%E5%8C%BB%E7%B2%BE%E8%AF%9A">大医精诚</a></li>
+					<li><a href="/w/%E4%BA%BA%E4%BD%93%E7%A9%B4%E4%BD%8D%E5%9B%BE">人体穴位图</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF%E5%9B%BE%E5%85%B8">中药图典</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8">全国医院列表</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E7%94%B5%E5%AD%90%E4%B9%A6">医学电子书</a></li>
+					<li><a href="/w/%E8%8D%AF%E5%93%81">药品百科</a></li>
+					<li><a href="/w/%E4%B8%AD%E5%8C%BB">中医百科</a></li>
+					<li><a href="/w/%E7%96%BE%E7%97%85%E8%AF%8A%E6%96%AD">疾病诊断</a></li>
+					<li><a href="/w/%E6%80%A5%E6%95%91%E5%B8%B8%E8%AF%86">急救常识</a></li>
+					<li><a href="/w/%E7%96%BE%E7%97%85">疾病查询</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF">中药百科</a></li>
+					<li><a href="/w/%E4%B8%AD%E8%8D%AF%E6%96%B9%E5%89%82">中医方剂大全</a></li>
+					<li><a href="/w/%E6%80%8E%E6%A0%B7%E7%9C%8B%E5%8C%96%E9%AA%8C%E5%8D%95">怎样看化验单</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%88%B6%E8%8D%AF%E4%BC%81%E4%B8%9A%E5%88%97%E8%A1%A8">全国制药企业</a></li>
+					<li><a href="/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%A7%91%E9%99%A2%E6%A0%A1%E5%88%97%E8%A1%A8">医科院校大全</a></li>
+					<li><a href="/w/%E5%8C%BB%E4%BA%8B%E6%BC%AB%E8%B0%88">医事漫谈</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E4%B8%8B%E8%BD%BD">医学下载</a></li>
+					<li><a href="/w/%E5%8C%BB%E5%AD%A6%E8%A7%86%E9%A2%91">医学视频</a></li>
+				</ul>
+			</div>
+</div>
+  
+<div class="portal" id='p-.E6.8E.A8.E8.8D.90.E5.B7.A5.E5.85.B7'>
+	<h5>推荐工具</h5>
+	<div class="body">
+				<ul>
+					<li><a href="http://www.adaohang.com/health.html">医学网站大全</a></li>
+					<li><a href="http://www.mcd8.com/">医学词典</a></li>
+					<li><a href="http://blog.a-hospital.com/">医学资讯博客</a></li>
+				</ul>
+			</div>
+</div>
+  
+<div class="portal" id='p-.E5.8A.9F.E8.83.BD.E8.8F.9C.E5.8D.95'>
+	<h5>功能菜单</h5>
+	<div class="body">
+				<ul>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E6%B7%BB%E5%8A%A0%E6%9D%A1%E7%9B%AE" rel="nofollow">添加页面</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E6%8B%9B%E5%8B%9F%E7%99%BE%E7%A7%91%E5%BF%97%E6%84%BF%E8%80%85" rel="nofollow">志愿者招募中</a></li>
+					<li><a href="/w/%E7%89%B9%E6%AE%8A:ContributionScores" rel="nofollow">积分排名</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E%E5%B9%BF%E5%91%8A" rel="nofollow">关于广告</a></li>
+					<li><a href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%BD%91%E7%AB%99%E4%BA%8B%E5%8A%A1">网站事务</a></li>
+					<li><a href="/w/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+				</ul>
+			</div>
+</div>
+<div class="portal" id="p-tb">
+	<h5>工具箱</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+						<li id="t-recentchangeslinked"><a href="/w/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3" title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+																																												<li id="t-specialpages"><a href="/w/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="所有特殊页面列表 [q]" accesskey="q">所有特殊页面</a></li>
+									<li id="t-print"><a href="/index.php?title=%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3&amp;printable=yes" rel="nofollow" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+						</ul>
+	</div>
+</div>
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-credits">此页由A+医学百科用户<a rel="nofollow" href="/w/%E7%94%A8%E6%88%B7:%E8%A1%8C%E5%8C%BB" title="用户:行医">行医</a>于2013年7月15日 (星期一) 13:23最后更改。 </li>
+																							<li id="footer-info-copyright"><br />本站内容由网友添加和整理，仅供学习和参考。站内信息不一定准确、全面或最新。<br />
+网站内容不应成为诊断或治疗疾病的最终依据。A+医学百科提醒网友，如有身体不适，请及时就医。<br />
+本站的全部文本内容在<a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E7%89%88%E6%9D%83" title="A+医学百科:版权">知识共享 署名-相同方式共享 3.0协议</a>之条款下提供。<br /></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96" title="A+医学百科:隐私政策">隐私政策</a></li>
+																							<li id="footer-places-about"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E" title="A+医学百科:关于">关于A+医学百科</a></li>
+																							<li id="footer-places-disclaimer"><a rel="nofollow" href="/w/A%2B%E5%8C%BB%E5%AD%A6%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="A+医学百科:免责声明">免责声明</a></li>
+															</ul>
+										<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+						<script>window._bd_share_config={"common":{"bdSign":"off","bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","weixin","tqq","tsina","fbook"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","weixin","tqq","tsina","fbook"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+				
+<script>
+var skin="vector",
+stylepath="http://s.ayxbk.com",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|mailto\\:",
+wgArticlePath="/w/$1",
+wgScriptPath="",
+wgScriptExtension=".php",
+wgScript="/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.a-hospital.com",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="中医妇科/缺乳",
+wgTitle="中医妇科/缺乳",
+wgAction="view",
+wgArticleId=95088,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="zh-hans",
+wgContentLanguage="zh-hans",
+wgBreakFrames=true,
+wgCurRevisionId=477817,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="首页",
+wgFormattedNamespaces={"-2": "媒体", "-1": "特殊", "0": "", "1": "讨论", "2": "用户", "3": "用户讨论", "4": "A+医学百科", "5": "A+医学百科讨论", "6": "文件", "7": "文件讨论", "8": "MediaWiki", "9": "MediaWiki讨论", "10": "模板", "11": "模板讨论", "12": "帮助", "13": "帮助讨论", "14": "分类", "15": "分类讨论", "420": "Layer", "421": "Layer talk"},
+wgSiteName="A+医学百科",
+wgCategories=["中医妇科学正文", "图书正文"],
+wgMWSuggestTemplate="http://www.a-hospital.com/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="ahospital",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["有建议", "无建议"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="http://s.ayxbk.com/common/main-mini.js?278"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("http://s.ayxbk.com/vector/csshover.htc")}</style><![endif]-->
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-1856547-6";
+</script>
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1856547-6");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- Served in 0.158 secs. -->			</body>
+<!-- Cached/compressed 20181018203920 -->
+</html>
+
+"""
+    response = HtmlResponse(url='http://www.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E5%A6%87%E7%A7%91/%E7%BC%BA%E4%B9%B3', 
+                            body=body, encoding='utf8')
+    ppl = AhospitalPipeline()
+    spider = HospitalSpider() 
+    ppl.open_spider(spider)
+    resp_iter = spider.parse(response)
+    page = next(resp_iter)
+    assert page is not None
+    assert not isinstance(page, AhospitalItem)
+
+    next_url = next(resp_iter)
+    assert isinstance(next_url, Request)
